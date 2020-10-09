@@ -33,7 +33,7 @@ const PickList = ({ side, flipped }: PicKListProps) => {
   return (
     <StyledPickList>
       {context[side].picks.map((pick) => (
-        <StyledPick flipped={flipped}>
+        <StyledPick key={pick} flipped={flipped}>
           <ChampionPortrait championName={pick} round />
           <h3>{pick}</h3>
         </StyledPick>
