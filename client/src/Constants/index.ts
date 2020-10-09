@@ -1,4 +1,8 @@
-const DDGRADON_BASE_URL =
+export const DDGRADON_BASE_URL =
   "http://ddragon.leagueoflegends.com/cdn/10.20.1/img/champion/";
 
-export { DDGRADON_BASE_URL };
+// I'm not sure if this is the best place to keep this enum
+export enum Sides {
+  Blue,
+  Red,
+}
