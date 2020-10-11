@@ -5,7 +5,7 @@ import { PickBanContext } from "../../context";
 import { IPickBansContext } from "../../types";
 import styled from "styled-components";
 
-interface PicKListProps {
+interface PickListProps {
   side: Sides;
   flipped?: boolean;
 }
@@ -28,7 +28,7 @@ const StyledPick = styled.div<StyledPickProps>`
   align-items: center;
 `;
 
-const PickList = ({ side, flipped }: PicKListProps) => {
+const PickList = ({ side, flipped }: PickListProps) => {
   const context = useContext<IPickBansContext>(PickBanContext);
 
   return (
