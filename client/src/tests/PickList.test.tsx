@@ -3,8 +3,9 @@ import { render } from "@testing-library/react";
 import PickList from "../Components/Molecules/PickList";
 import "@testing-library/jest-dom/extend-expect";
 import "jest-styled-components";
-import { PickBanContext, IPickBansContext } from "../App";
-import { Sides, DDGRADON_BASE_URL } from "../Constants";
+import { IPickBansContext } from "../types";
+import { PickBanContext } from "../context";
+import { Sides, DDGRADON_PORTRAIT_URL } from "../Constants";
 
 const testValue: IPickBansContext = {
   [Sides.Blue]: {
@@ -68,7 +69,7 @@ test("Renders left side (flipped = false) properly", async () => {
           <img
             alt="Annie"
             class="c2"
-            src="${DDGRADON_BASE_URL}Annie.png"
+            src="${DDGRADON_PORTRAIT_URL}Annie.png"
           />
           <h3>
             Annie
@@ -80,7 +81,7 @@ test("Renders left side (flipped = false) properly", async () => {
           <img
             alt="Aatrox"
             class="c2"
-            src="${DDGRADON_BASE_URL}Aatrox.png"
+            src="${DDGRADON_PORTRAIT_URL}Aatrox.png"
           />
           <h3>
             Aatrox
@@ -92,7 +93,7 @@ test("Renders left side (flipped = false) properly", async () => {
           <img
             alt="Ornn"
             class="c2"
-            src="${DDGRADON_BASE_URL}Ornn.png"
+            src="${DDGRADON_PORTRAIT_URL}Ornn.png"
           />
           <h3>
             Ornn
@@ -104,7 +105,7 @@ test("Renders left side (flipped = false) properly", async () => {
           <img
             alt="Graves"
             class="c2"
-            src="${DDGRADON_BASE_URL}Graves.png"
+            src="${DDGRADON_PORTRAIT_URL}Graves.png"
           />
           <h3>
             Graves
@@ -116,7 +117,7 @@ test("Renders left side (flipped = false) properly", async () => {
           <img
             alt="Gragas"
             class="c2"
-            src="${DDGRADON_BASE_URL}Gragas.png"
+            src="${DDGRADON_PORTRAIT_URL}Gragas.png"
           />
           <h3>
             Gragas
@@ -178,7 +179,7 @@ test("Renders right side (flipped = true) properly", async () => {
           <img
             alt="Ryze"
             class="c2"
-            src="${DDGRADON_BASE_URL}Ryze.png"
+            src="${DDGRADON_PORTRAIT_URL}Ryze.png"
           />
           <h3>
             Ryze
@@ -190,7 +191,7 @@ test("Renders right side (flipped = true) properly", async () => {
           <img
             alt="AurelionSol"
             class="c2"
-            src="${DDGRADON_BASE_URL}AurelionSol.png"
+            src="${DDGRADON_PORTRAIT_URL}AurelionSol.png"
           />
           <h3>
             AurelionSol
@@ -202,7 +203,7 @@ test("Renders right side (flipped = true) properly", async () => {
           <img
             alt="Zyra"
             class="c2"
-            src="${DDGRADON_BASE_URL}Zyra.png"
+            src="${DDGRADON_PORTRAIT_URL}Zyra.png"
           />
           <h3>
             Zyra
@@ -214,7 +215,7 @@ test("Renders right side (flipped = true) properly", async () => {
           <img
             alt="Sion"
             class="c2"
-            src="${DDGRADON_BASE_URL}Sion.png"
+            src="${DDGRADON_PORTRAIT_URL}Sion.png"
           />
           <h3>
             Sion
@@ -226,7 +227,7 @@ test("Renders right side (flipped = true) properly", async () => {
           <img
             alt="Karthus"
             class="c2"
-            src="${DDGRADON_BASE_URL}Karthus.png"
+            src="${DDGRADON_PORTRAIT_URL}Karthus.png"
           />
           <h3>
             Karthus

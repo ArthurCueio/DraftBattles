@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { DDGRADON_BASE_URL } from "../../Constants";
+import { DDGRADON_PORTRAIT_URL } from "../../Constants";
 
 interface ChampionPortraitProps {
   championName: string;
@@ -21,7 +21,7 @@ const Image = styled.img<ImageProps>`
 `;
 
 const ChampionPortrait = ({ championName, round }: ChampionPortraitProps) => {
-  const imgSrc = `${DDGRADON_BASE_URL}${championName}.png`;
+  const imgSrc = `${DDGRADON_PORTRAIT_URL}${championName}.png`;
 
   return <Image alt={championName} src={imgSrc} round={round} />;
 };

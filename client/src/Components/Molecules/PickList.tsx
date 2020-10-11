@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import ChampionPortrait from "../Atoms/ChampionPortrait";
 import { Sides } from "../../Constants";
-import { PickBanContext, IPickBansContext } from "../../App";
+import { PickBanContext } from "../../context";
+import { IPickBansContext } from "../../types";
 import styled from "styled-components";
 
 interface PicKListProps {

@@ -4,7 +4,7 @@ import ChampionPortrait from "../Components/Atoms/ChampionPortrait";
 import "@testing-library/jest-dom/extend-expect";
 import "jest-styled-components";
 
-import { DDGRADON_BASE_URL } from "../Constants";
+import { DDGRADON_PORTRAIT_URL } from "../Constants";
 
 test("renders square champion portrait", async () => {
   const { container } = render(<ChampionPortrait championName="Annie" />);
@@ -20,7 +20,7 @@ test("renders square champion portrait", async () => {
     <img
       alt="Annie"
       class="c0"
-      src="${DDGRADON_BASE_URL}Annie.png"
+      src="${DDGRADON_PORTRAIT_URL}Annie.png"
     />
   `);
 });
@@ -39,7 +39,7 @@ test("renders round champion portrait", async () => {
     <img
       alt="Annie"
       class="c0"
-      src="${DDGRADON_BASE_URL}Annie.png"
+      src="${DDGRADON_PORTRAIT_URL}Annie.png"
     />
   `);
 });
