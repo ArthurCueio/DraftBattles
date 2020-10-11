@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import { DDGRADON_PORTRAIT_URL } from "../../Constants";
+import { DDGRADON_PORTRAIT_URL, DDGRAGON_NOICON_URL } from "../../Constants";
 
 interface ChampionPortraitProps {
   championName: string;
@@ -53,7 +53,11 @@ const ChampionPortrait = ({
   selected,
   onClick,
 }: ChampionPortraitProps) => {
-  const imgSrc = `${DDGRADON_PORTRAIT_URL}${championName}.png`;
+  let imgSrc = `${DDGRADON_PORTRAIT_URL}${championName}.png`;
+
+  if (championName === "") {
+    imgSrc = DDGRAGON_NOICON_URL;
+  }
 
   return (
     <Image
