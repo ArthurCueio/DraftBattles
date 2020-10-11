@@ -1,4 +1,3 @@
-import fetch from "node-fetch";
 import { DDGRADON_CHAMPIONS_URL } from "../Constants";
 
 const getChampionList = async () => {
