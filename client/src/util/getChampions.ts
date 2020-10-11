@@ -5,7 +5,10 @@ const getChampionList = async () => {
   return await fetch(DDGRADON_CHAMPIONS_URL)
     .then((res) => res.json())
     .then((data) => Object.keys(data.data))
-    .catch(console.error);
+    .catch((err) => {
+      console.error(err);
+      return [] as string[];
+    });
 };
 
 export default getChampionList;
