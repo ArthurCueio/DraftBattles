@@ -7,7 +7,7 @@ Online multiplayer League of Legends draft battles. (Tournament draft mode)
 - [ ] Draft UI
   - [ ] Timer
   - [X] Pick list for both sides
-  - [ ] Ban list for both sides
+  - [X] Ban list for both sides
   - [X] Champion list
     - [ ] Show loading animation before list is populated
   - [ ] Animations for pick/ban
