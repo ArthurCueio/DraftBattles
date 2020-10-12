@@ -5,7 +5,7 @@ import { PickBanContext } from "./context";
 import { IPickBansContext } from "./types";
 import { Sides } from "./Constants";
 
-function App() {
+const App = () => {
   const testValue: IPickBansContext = {
     [Sides.Blue]: {
       picks: ["Annie", "Aphelios", "Ornn", "", ""],
@@ -22,6 +22,6 @@ function App() {
       <PickBanPage />
     </PickBanContext.Provider>
   );
-}
+};
 
 export default App;
