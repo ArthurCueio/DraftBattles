@@ -24,7 +24,7 @@ const ChampionList = () => {
     <StyledWrapper>
       {champs.map((c) => (
         <ChampionPortrait
-          key={`$list${c}`}
+          key={`list${c}`}
           championName={c}
           selectable
           selected={selChamp === c}
