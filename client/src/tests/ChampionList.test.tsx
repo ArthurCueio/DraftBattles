@@ -30,8 +30,9 @@ test("Renders properly", async () => {
       display: grid;
       grid-template-columns: repeat(6,1fr);
       gap: 1em;
-      max-width: 35em;
-      padding: 1em;
+      overflow-x: hidden;
+      height: 100%;
+      padding: 0 1em;
     }
 
     <div>
