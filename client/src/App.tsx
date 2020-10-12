@@ -9,11 +9,11 @@ const App = () => {
   const testValue: IPickBansContext = {
     [Sides.Blue]: {
       picks: ["Annie", "Aphelios", "Ornn", "", ""],
-      bans: ["", "", "", "", ""],
+      bans: ["Malzahar", "Brand", "", "", ""],
     },
     [Sides.Red]: {
       picks: ["Ryze", "AurelionSol", "Zyra", "Sion", ""],
-      bans: ["", "", "", "", ""],
+      bans: ["Diana", "", "", "", ""],
     },
   };
 

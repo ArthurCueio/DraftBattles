@@ -8,12 +8,14 @@ interface ChampionPortraitProps {
   selectable?: boolean;
   onClick?(): any;
   selected?: boolean;
+  small?: boolean;
 }
 
 interface ImageProps {
   round?: boolean;
   selectable?: boolean;
   selected?: boolean;
+  small?: boolean;
 }
 
 const Image = styled.img<ImageProps>`
@@ -22,7 +24,8 @@ const Image = styled.img<ImageProps>`
   max-height: 128px;
   max-width: 128px;
 
-  width: 5em;
+  width: ${(p) => (p.small ? "2.5em" : "5em")};
+  height: ${(p) => (p.small ? "2.5em" : "5em")};
 
   ${(p) =>
     p.selected &&
@@ -51,6 +54,7 @@ const ChampionPortrait = ({
   round,
   selectable,
   selected,
+  small,
   onClick,
 }: ChampionPortraitProps) => {
   let imgSrc = `${DDGRADON_PORTRAIT_URL}${championName}.png`;
@@ -66,6 +70,7 @@ const ChampionPortrait = ({
       round={round}
       selectable={selectable}
       selected={selected}
+      small={small}
       onClick={onClick}
     />
   );
