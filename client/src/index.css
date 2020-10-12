@@ -8,6 +8,8 @@ body {
 
   background: #001a21;
   color: whitesmoke;
+
+  box-sizing: border-box;
 }
 
 code {
