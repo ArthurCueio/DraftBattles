@@ -33,17 +33,6 @@ test("Renders left side (flipped = false) properly", async () => {
       width: 5em;
     }
 
-    .c0 {
-      display: -webkit-inline-box;
-      display: -webkit-inline-flex;
-      display: -ms-inline-flexbox;
-      display: inline-flex;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      gap: 0.5em;
-    }
-
     .c1 {
       display: -webkit-box;
       display: -webkit-flex;
@@ -57,6 +46,17 @@ test("Renders left side (flipped = false) properly", async () => {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
+    }
+
+    .c0 {
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      gap: 0.5em;
     }
 
     <div>
@@ -143,17 +143,6 @@ test("Renders right side (flipped = true) properly", async () => {
       width: 5em;
     }
 
-    .c0 {
-      display: -webkit-inline-box;
-      display: -webkit-inline-flex;
-      display: -ms-inline-flexbox;
-      display: inline-flex;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      gap: 0.5em;
-    }
-
     .c1 {
       display: -webkit-box;
       display: -webkit-flex;
@@ -167,6 +156,17 @@ test("Renders right side (flipped = true) properly", async () => {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
+    }
+
+    .c0 {
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      gap: 0.5em;
     }
 
     <div>
