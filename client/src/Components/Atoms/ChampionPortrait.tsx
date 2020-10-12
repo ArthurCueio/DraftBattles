@@ -20,6 +20,7 @@ interface ImageProps {
 
 const Image = styled.img<ImageProps>`
   border-radius: ${(p) => (p.round ? "50%" : "0")};
+  border: #544121 solid 0.15em;
 
   max-height: 128px;
   max-width: 128px;
