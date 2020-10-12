@@ -23,6 +23,10 @@ const PBContainer = styled.div`
   ${/* TODO: Im not sure if this looks ok on bigger screens */ ""}
   height: 500px;
   width: 1200px;
+
+  background: #001a31;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  padding: 1em;
 `;
 
 const PickBanPage = () => {
