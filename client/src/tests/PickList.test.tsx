@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import PickList from "../Components/Molecules/PickList";
+import PickList from "../Components/Organisms/PickList";
 import "@testing-library/jest-dom/extend-expect";
 import "jest-styled-components";
 import { IPickBansContext } from "../types";
