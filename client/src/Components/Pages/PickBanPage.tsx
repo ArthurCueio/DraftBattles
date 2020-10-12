@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import PickList from "../Organisms/PickList";
 import ChampionList from "../Molecules/ChampionList";
+import BanList from "../Organisms/BanList";
 
 import { Sides } from "../../Constants";
 
@@ -41,9 +42,9 @@ const PickBanPage = () => {
          * It will be like this, for now.
          */}
 
-        {/* Blue side bans */}
-        {/* Timer */}
-        {/* Red side bans */}
+        <BanList side={Sides.Blue} />
+        <p>I'm a place holder for timer</p>
+        <BanList side={Sides.Red} flipped />
         <PickList side={Sides.Blue} />
         <ChampionList />
         <PickList side={Sides.Red} flipped />
