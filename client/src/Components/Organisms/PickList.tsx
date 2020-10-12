@@ -3,7 +3,7 @@ import { Sides } from "../../Constants";
 import { PickBanContext } from "../../context";
 import { IPickBansContext } from "../../types";
 import styled from "styled-components";
-import Pick from "./Pick";
+import Pick from "../Molecules/Pick";
 
 interface PickListProps {
   side: Sides;
