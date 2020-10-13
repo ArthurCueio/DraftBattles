@@ -24,7 +24,7 @@ const BanList = ({ side, flipped }: BanListProps) => {
   const context = useContext(PickBanContext);
   return (
     <StyledBanList flipped={flipped}>
-      {context[side].bans.map((ban) => {
+      {context.bans[side].map((ban) => {
         return <ChampionPortrait championName={ban} small />;
       })}
     </StyledBanList>

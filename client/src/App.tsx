@@ -1,17 +1,22 @@
 import React from "react";
 import PickBanPage from "./Components/Pages/PickBanPage";
 import { PickBanContext } from "./context";
-import { IPickBansContext, Sides } from "./types";
+import { IDraftContext, RoundType, Sides } from "./types";
 
 const App = () => {
-  const testValue: IPickBansContext = {
-    [Sides.Blue]: {
-      picks: ["Annie", "Aphelios", "Ornn", "", ""],
-      bans: ["Malzahar", "Brand", "", "", ""],
+  const testValue: IDraftContext = {
+    picks: {
+      [Sides.Blue]: ["Annie", "Aphelios", "Ornn", "", ""],
+      [Sides.Red]: ["Ryze", "AurelionSol", "Zyra", "Sion", ""],
     },
-    [Sides.Red]: {
-      picks: ["Ryze", "AurelionSol", "Zyra", "Sion", ""],
-      bans: ["Diana", "", "", "", ""],
+    bans: {
+      [Sides.Blue]: ["Malzahar", "Brand", "", "", ""],
+      [Sides.Red]: ["Diana", "", "", "", ""],
+    },
+    round: {
+      type: RoundType.Pick,
+      side: Sides.Blue,
+      id: 4,
     },
   };
 

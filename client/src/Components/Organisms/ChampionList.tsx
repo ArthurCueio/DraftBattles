@@ -24,7 +24,7 @@ const ChampionList = () => {
   const context = useContext(PickBanContext);
 
   const allBans = useMemo(() => {
-    return [...context[Sides.Blue].bans, ...context[Sides.Red].bans];
+    return [...context.bans[Sides.Blue], ...context.bans[Sides.Red]];
   }, [context]);
 
   const isBanned = (champion: string) => {

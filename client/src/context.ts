@@ -1,17 +1,22 @@
 import React from "react";
-import { IPickBansContext, Sides } from "./types";
+import { IDraftContext, RoundType, Sides } from "./types";
 
-const initialValue: IPickBansContext = {
-  [Sides.Blue]: {
-    picks: ["", "", "", "", ""],
-    bans: ["", "", "", "", ""],
+const initialValue: IDraftContext = {
+  picks: {
+    [Sides.Blue]: ["", "", "", "", ""],
+    [Sides.Red]: ["", "", "", "", ""],
   },
-  [Sides.Red]: {
-    picks: ["", "", "", "", ""],
-    bans: ["", "", "", "", ""],
+  bans: {
+    [Sides.Blue]: ["", "", "", "", ""],
+    [Sides.Red]: ["", "", "", "", ""],
+  },
+  round: {
+    type: RoundType.Ban,
+    side: Sides.Blue,
+    id: 1,
   },
 };
 
-export const PickBanContext = React.createContext<IPickBansContext>(
+export const PickBanContext = React.createContext<IDraftContext>(
   initialValue
 );
