@@ -16,13 +16,17 @@ const Wrapper = styled.div`
 
 const PBContainer = styled.div`
   display: grid;
-  grid-template-columns: 3fr 6fr 3fr;
+  grid-template-columns: 3fr 7fr 3fr;
   grid-template-rows: 1fr 3fr 1fr;
   grid-template-areas: "bansL timer bansR" "picksL championList picksR" "emptyL button emptyR";
+  justify-content: center;
+  align-content: center;
 
   ${/* TODO: Im not sure if this looks ok on bigger screens */ ""}
-  height: 500px;
+  height: 90vh;
   width: 1200px;
+
+  max-height: 700px;
 
   background: #001a31;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -52,8 +56,9 @@ const PickBanPage = () => {
         <PickList side={Sides.Blue} />
         <ChampionList />
         <PickList side={Sides.Red} flipped />
+        <p></p>
         {/* Something empty just to skip the grid cell */}
-        {/* Pick/Ban button */}
+        <p>a</p>
       </PBContainer>
     </Wrapper>
   );

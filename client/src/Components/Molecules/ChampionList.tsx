@@ -8,8 +8,7 @@ const StyledWrapper = styled.div`
   grid-template-columns: repeat(6, 1fr);
   gap: 1em;
   overflow-x: hidden;
-  height: 100%;
-  padding: 0 1em;
+  margin: 1em;
 `;
 
 const ChampionList = () => {
