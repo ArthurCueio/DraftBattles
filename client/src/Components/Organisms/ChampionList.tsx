@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext, useMemo } from "react";
 import styled from "styled-components";
 import getChampionList from "../../util/getChampions";
 import ChampionPortrait from "../Atoms/ChampionPortrait";
+import { PickBanContext } from "../../context";
+import { Sides } from "../../Constants";
 
 const StyledWrapper = styled.div`
   display: grid;
@@ -19,6 +21,16 @@ const ChampionList = () => {
     getChampionList().then((data) => setChamps(data));
   }, []);
 
+  const context = useContext(PickBanContext);
+
+  const allBans = useMemo(() => {
+    return [...context[Sides.Blue].bans, ...context[Sides.Red].bans];
+  }, [context]);
+
+  const isBanned = (champion: string) => {
+    return allBans.includes(champion);
+  };
+
   return (
     <StyledWrapper>
       {champs.map((c) => (
@@ -27,6 +39,7 @@ const ChampionList = () => {
           championName={c}
           selectable
           selected={selChamp === c}
+          disabled={isBanned(c)}
           onClick={() => {
             setSelChamp(c);
           }}

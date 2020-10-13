@@ -9,6 +9,7 @@ interface ChampionPortraitProps {
   onClick?(): any;
   selected?: boolean;
   small?: boolean;
+  disabled?: boolean;
 }
 
 interface ImageProps {
@@ -16,6 +17,7 @@ interface ImageProps {
   selectable?: boolean;
   selected?: boolean;
   small?: boolean;
+  disabled?: boolean;
 }
 
 const Image = styled.img<ImageProps>`
@@ -39,6 +41,7 @@ const Image = styled.img<ImageProps>`
 
   ${(p) =>
     p.selectable &&
+    !p.disabled &&
     css`
       &:hover {
         cursor: pointer;
@@ -48,6 +51,12 @@ const Image = styled.img<ImageProps>`
         outline: red solid 0.2em;
       }
     `}
+  
+  ${(p) =>
+    p.disabled &&
+    css`
+      filter: grayscale(100%);
+    `}
 `;
 
 const ChampionPortrait = ({
@@ -56,12 +65,17 @@ const ChampionPortrait = ({
   selectable,
   selected,
   small,
+  disabled,
   onClick,
 }: ChampionPortraitProps) => {
   let imgSrc = `${DDGRADON_PORTRAIT_URL}${championName}.png`;
 
   if (championName === "") {
     imgSrc = DDGRAGON_NOICON_URL;
+  }
+
+  if (disabled) {
+    onClick = undefined;
   }
 
   return (
@@ -73,6 +87,7 @@ const ChampionPortrait = ({
       selected={selected}
       small={small}
       onClick={onClick}
+      disabled={disabled}
     />
   );
 };
