@@ -4,6 +4,7 @@ import styled from "styled-components";
 import PickList from "../Organisms/PickList";
 import ChampionList from "../Molecules/ChampionList";
 import BanList from "../Organisms/BanList";
+import StyledButton from "../Atoms/Button";
 
 import { Sides } from "../../Constants";
 
@@ -56,9 +57,9 @@ const PickBanPage = () => {
         <PickList side={Sides.Blue} />
         <ChampionList />
         <PickList side={Sides.Red} flipped />
-        <p></p>
         {/* Something empty just to skip the grid cell */}
-        <p>a</p>
+        <p></p>
+        <StyledButton>Pick</StyledButton>
       </PBContainer>
     </Wrapper>
   );
