@@ -3,7 +3,7 @@ import styled from "styled-components";
 import getChampionList from "../../util/getChampions";
 import ChampionPortrait from "../Atoms/ChampionPortrait";
 import { PickBanContext } from "../../context";
-import { Sides } from "../../Constants";
+import { Sides } from "../../types";
 
 const StyledWrapper = styled.div`
   display: grid;

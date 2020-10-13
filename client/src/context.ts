@@ -1,6 +1,5 @@
 import React from "react";
-import { IPickBansContext } from "./types";
-import { Sides } from "./Constants";
+import { IPickBansContext, Sides } from "./types";
 
 const initialValue: IPickBansContext = {
   [Sides.Blue]: {

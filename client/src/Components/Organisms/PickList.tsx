@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
-import { Sides } from "../../Constants";
 import { PickBanContext } from "../../context";
-import { IPickBansContext } from "../../types";
+import { IPickBansContext, Sides } from "../../types";
 import styled from "styled-components";
 import Pick from "../Molecules/Pick";
 

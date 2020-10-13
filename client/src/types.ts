@@ -1,4 +1,7 @@
-import { Sides } from "./Constants";
+export enum Sides {
+  Blue,
+  Red,
+}
 
 export interface IPickBans {
   picks: string[];

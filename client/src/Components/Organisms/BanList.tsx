@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import { PickBanContext } from "../../context";
-import { Sides } from "../../Constants";
+import { Sides } from "../../types";
 
 import ChampionPortrait from "../Atoms/ChampionPortrait";
 

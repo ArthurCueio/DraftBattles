@@ -1,12 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-
 import PickList from "../Organisms/PickList";
 import ChampionList from "../Organisms/ChampionList";
 import BanList from "../Organisms/BanList";
 import StyledButton from "../Atoms/Button";
-
-import { Sides } from "../../Constants";
+import { Sides } from "../../types";
 
 const Wrapper = styled.div`
   display: flex;

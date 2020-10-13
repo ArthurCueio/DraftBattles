@@ -1,8 +1,7 @@
 import React from "react";
 import PickBanPage from "./Components/Pages/PickBanPage";
 import { PickBanContext } from "./context";
-import { IPickBansContext } from "./types";
-import { Sides } from "./Constants";
+import { IPickBansContext, Sides } from "./types";
 
 const App = () => {
   const testValue: IPickBansContext = {
