@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import PickBanPage from "./Components/Pages/PickBanPage";
 import { PickBanContext } from "./context";
 import { IPickBansContext } from "./types";
