@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import PickList from "../Organisms/PickList";
-import ChampionList from "../Molecules/ChampionList";
+import ChampionList from "../Organisms/ChampionList";
 import BanList from "../Organisms/BanList";
 import StyledButton from "../Atoms/Button";
 

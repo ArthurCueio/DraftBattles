@@ -1,6 +1,6 @@
 import React from "react";
 import { render, act } from "@testing-library/react";
-import ChampionList from "../Components/Molecules/ChampionList";
+import ChampionList from "../Components/Organisms/ChampionList";
 import "@testing-library/jest-dom/extend-expect";
 import "jest-styled-components";
 
