@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { PickBanContext } from "../../context";
+import { DraftContext } from "../../context";
 import { IDraftContext, Sides } from "../../types";
 import styled from "styled-components";
 import Pick from "../Molecules/Pick";
@@ -15,7 +15,7 @@ const StyledPickList = styled.div`
 `;
 
 const PickList = ({ side, flipped }: PickListProps) => {
-  const context = useContext<IDraftContext>(PickBanContext);
+  const context = useContext<IDraftContext>(DraftContext);
 
   return (
     <StyledPickList>

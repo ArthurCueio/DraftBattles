@@ -1,6 +1,6 @@
 import React from "react";
 import PickBanPage from "./Components/Pages/PickBanPage";
-import { PickBanContext } from "./context";
+import { DraftContext } from "./context";
 import { IDraftContext, RoundType, Sides } from "./types";
 
 const App = () => {
@@ -21,9 +21,9 @@ const App = () => {
   };
 
   return (
-    <PickBanContext.Provider value={testValue}>
+    <DraftContext.Provider value={testValue}>
       <PickBanPage />
-    </PickBanContext.Provider>
+    </DraftContext.Provider>
   );
 };
 

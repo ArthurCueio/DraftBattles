@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
-import { PickBanContext } from "../../context";
+import { DraftContext } from "../../context";
 import { Sides } from "../../types";
 
 import ChampionPortrait from "../Atoms/ChampionPortrait";
@@ -21,7 +21,7 @@ const StyledBanList = styled.div<StyledBanListProps>`
 `;
 
 const BanList = ({ side, flipped }: BanListProps) => {
-  const context = useContext(PickBanContext);
+  const context = useContext(DraftContext);
   return (
     <StyledBanList flipped={flipped}>
       {context.bans[side].map((ban) => {

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext, useMemo } from "react";
 import styled from "styled-components";
 import getChampionList from "../../util/getChampions";
 import ChampionPortrait from "../Atoms/ChampionPortrait";
-import { PickBanContext } from "../../context";
+import { DraftContext } from "../../context";
 import { Sides } from "../../types";
 
 const StyledWrapper = styled.div`
@@ -21,7 +21,7 @@ const ChampionList = () => {
     getChampionList().then((data) => setChamps(data));
   }, []);
 
-  const context = useContext(PickBanContext);
+  const context = useContext(DraftContext);
 
   const allBans = useMemo(() => {
     return [...context.bans[Sides.Blue], ...context.bans[Sides.Red]];

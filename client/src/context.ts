@@ -17,6 +17,6 @@ const initialValue: IDraftContext = {
   },
 };
 
-export const PickBanContext = React.createContext<IDraftContext>(
+export const DraftContext = React.createContext<IDraftContext>(
   initialValue
 );
