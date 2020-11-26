@@ -5,6 +5,7 @@ import ChampionList from "../Organisms/ChampionList";
 import BanList from "../Organisms/BanList";
 import StyledButton from "../Atoms/Button";
 import { Sides } from "../../types";
+import Timer from "../Organisms/Timer";
 
 const Wrapper = styled.div`
   display: flex;
@@ -50,12 +51,11 @@ const PickBanPage = () => {
          */}
 
         <BanList side={Sides.Blue} />
-        <p>I'm a place holder for timer</p>
+        <Timer />
         <BanList side={Sides.Red} flipped />
         <PickList side={Sides.Blue} />
         <ChampionList />
         <PickList side={Sides.Red} flipped />
-        {/* Something empty just to skip the grid cell */}
         <p></p>
         <StyledButton>Pick</StyledButton>
       </PBContainer>

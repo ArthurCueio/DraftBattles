@@ -18,6 +18,7 @@ const App = () => {
       side: Sides.Blue,
       id: 4,
     },
+    timer: 42,
   };
 
   return (

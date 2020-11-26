@@ -15,8 +15,7 @@ const initialValue: IDraftContext = {
     side: Sides.Blue,
     id: 1,
   },
+  timer: 0,
 };
 
-export const DraftContext = React.createContext<IDraftContext>(
-  initialValue
-);
+export const DraftContext = React.createContext<IDraftContext>(initialValue);

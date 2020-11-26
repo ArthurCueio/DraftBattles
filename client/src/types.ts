@@ -4,18 +4,19 @@ export enum Sides {
 }
 
 export type Picks = {
-  [key in Sides]: string[]
-}
+  [key in Sides]: string[];
+};
 
 export type Bans = {
-  [key in Sides]: string[]
-}
+  [key in Sides]: string[];
+};
 
 export interface IDraftContext {
   picks: Picks;
   bans: Bans;
   round: Round;
-};
+  timer: Number;
+}
 
 export enum RoundType {
   Pick,
@@ -25,5 +26,5 @@ export enum RoundType {
 export interface Round {
   side: Sides;
   type: RoundType;
-  id: 1|2|3|4|5; 
+  id: 1 | 2 | 3 | 4 | 5;
 }
