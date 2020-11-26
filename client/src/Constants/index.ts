@@ -1,4 +1,4 @@
-export const DDGRADON_VERSION = "10.20.1";
+export const DDGRADON_VERSION = "10.23.1"; // TODO load this from env at compile time
 
 export const DDGRADON_PORTRAIT_URL = `http://ddragon.leagueoflegends.com/cdn/${DDGRADON_VERSION}/img/champion/`;
 
